@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+      var isScattered = true
     @IBOutlet weak var LLabel: UILabel!
     @IBOutlet weak var ALabel: UILabel!
     @IBOutlet weak var MLabel: UILabel!
@@ -24,10 +26,10 @@ class ViewController: UIViewController {
     
     
     @IBAction func toggleButtonPressed(_ sender: UIBarButtonItem) {
-        var isScattered: Bool = true
-        isScattered != isScattered
+      
+        
         if isScattered{
-            UIView.animate(withDuration: 2.7) {
+            UIView.animate(withDuration: 2.7){
                 self.imageView.alpha = 0
                 self.LLabel.center = CGPoint(x: Int.random(in: 1...100), y: Int.random(in: 1...100))
                 self.ALabel.center = CGPoint(x: Int.random(in: 1...100), y: Int.random(in: 1...100))
@@ -37,30 +39,50 @@ class ViewController: UIViewController {
                 self.ALabel.center = CGPoint(x: Int.random(in: 1...100), y: Int.random(in: 1...100))
                 
                 
-                self.LLabel.textColor = UIColor(red: CGFloat.random(in: 1...100), green: CGFloat.random(in: 1...100), blue: CGFloat.random(in: 1...100), alpha: CGFloat.random(in: 1...100))
+                self.LLabel.textColor = UIColor(red: CGFloat.random(in: 0...1), green: CGFloat.random(in: 0...1), blue: CGFloat.random(in: 0...1), alpha: 1)
                 
-                self.ALabel.textColor = UIColor(red: CGFloat.random(in: 1...100), green: CGFloat.random(in: 1...100), blue: CGFloat.random(in: 1...100), alpha: CGFloat.random(in: 1...100))
+                self.ALabel.textColor = UIColor(red: CGFloat.random(in: 0...1), green: CGFloat.random(in: 0...1), blue: CGFloat.random(in: 0...1), alpha: 1)
                 
-                self.MLabel.textColor = UIColor(red: CGFloat.random(in: 1...100), green: CGFloat.random(in: 1...100), blue: CGFloat.random(in: 1...100), alpha: CGFloat.random(in: 1...100))
-                self.BLabel.textColor = UIColor(red: CGFloat.random(in: 1...100), green: CGFloat.random(in: 1...100), blue: CGFloat.random(in: 1...100), alpha: CGFloat.random(in: 1...100))
-                self.DLabel.textColor = UIColor(red: CGFloat.random(in: 1...100), green: CGFloat.random(in: 1...100), blue: CGFloat.random(in: 1...100), alpha: CGFloat.random(in: 1...100))
-                self.AendLabel.textColor = UIColor(red: CGFloat.random(in: 1...100), green: CGFloat.random(in: 1...100), blue: CGFloat.random(in: 1...100), alpha: CGFloat.random(in: 1...100))
+                self.MLabel.textColor = UIColor(red: CGFloat.random(in: 0...1), green: CGFloat.random(in: 0...1), blue: CGFloat.random(in: 0...1), alpha: 1)
+                self.BLabel.textColor = UIColor(red: CGFloat.random(in: 0...1), green: CGFloat.random(in: 0...1), blue: CGFloat.random(in: 0...1), alpha: 1)
+                self.DLabel.textColor = UIColor(red: CGFloat.random(in: 0...1), green: CGFloat.random(in: 0...1), blue: CGFloat.random(in: 0...1), alpha: 1)
+                self.AendLabel.textColor = UIColor(red: CGFloat.random(in: 0...1), green: CGFloat.random(in: 0...1), blue: CGFloat.random(in: 0...1), alpha: 1)
                 
                 
                 self.LLabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi/4)
                 self.ALabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi/4)
                 self.MLabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi/4)
+                self.BLabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi/4)
                 self.DLabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi/4)
                 self.AendLabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi/4)
                 
             }
         }else {
-            self.imageView.alpha = 1
+            UIView.animate(withDuration: 2.7) {
+                self.imageView.alpha = 1
+                self.LLabel.center = CGPoint(x: 0, y: 0)
+                self.ALabel.center = CGPoint(x: 25.5, y: 0)
+                self.MLabel.center = CGPoint(x: 53, y: 0)
+                self.BLabel.center = CGPoint(x: 83.5, y: 0)
+                self.DLabel.center = CGPoint(x: 110.5, y: 0)
+                self.AendLabel.center = CGPoint(x: 138.5, y: 0)
+                
+                
+                
+                
+                self.LLabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi*4)
+                self.ALabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi*4)
+                self.MLabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi*4)
+                self.BLabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi*4)
+                self.DLabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi*4)
+                self.AendLabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi*4)
+            }
             
+         
             
         }
         
-        
+        isScattered = !isScattered
     }
     
     
