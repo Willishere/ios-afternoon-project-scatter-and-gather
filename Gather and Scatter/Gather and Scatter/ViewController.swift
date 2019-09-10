@@ -29,7 +29,16 @@ class ViewController: UIViewController {
         if isScattered{
             UIView.animate(withDuration: 1.5) {
                 self.imageView.alpha = 0
+                self.LLabel.center = CGPoint(x: Int.random(in: 1...100), y: Int.random(in: 1...100))
+                self.ALabel.center = CGPoint(x: Int.random(in: 1...100), y: Int.random(in: 1...100))
+                self.MLabel.center = CGPoint(x: Int.random(in: 1...100), y: Int.random(in: 1...1000))
+                self.BLabel.center = CGPoint(x: Int.random(in: 1...100), y: Int.random(in: 1...100))
+                self.DLabel.center = CGPoint(x: Int.random(in: 1...100), y: Int.random(in: 1...100))
+                self.ALabel.center = CGPoint(x: Int.random(in: 1...100), y: Int.random(in: 1...100))
+                
             }
+            
+            
             
         }else {
             
