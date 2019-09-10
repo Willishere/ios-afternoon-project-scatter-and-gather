@@ -14,7 +14,19 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+    
+    
+    @IBAction func toggleButtonPressed(_ sender: UIBarButtonItem) {
+        var isScattered: Bool = true
+        isScattered != isScattered
+        if isScattered{
+            
+        }else {
+            
+        }
+        
+        
+    }
+    
 }
 
