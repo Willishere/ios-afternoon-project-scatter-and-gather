@@ -35,22 +35,34 @@ class ViewController: UIViewController {
                 self.BLabel.center = CGPoint(x: Int.random(in: 1...100), y: Int.random(in: 1...100))
                 self.DLabel.center = CGPoint(x: Int.random(in: 1...100), y: Int.random(in: 1...100))
                 self.ALabel.center = CGPoint(x: Int.random(in: 1...100), y: Int.random(in: 1...100))
-                self.LLabel.backgroundColor = UIColor(red: CGFloat.random(in: 1...100, green: CGFloat.random(in: 1...100), blue: CGFloat.random(in: 1...100), alpha: CGFloat.random(in: 1...100)
-                    
-                self.LLabel.textColor = UIColor(red: CGFloat.random(in: 1...100), green: CGFloat.random(in: 1...100), blue: CGFloat.random(in: 1...100), alpha: CGFloat.random(in: 1...100)
                 
                 
+                self.LLabel.textColor = UIColor(red: CGFloat.random(in: 1...100), green: CGFloat.random(in: 1...100), blue: CGFloat.random(in: 1...100), alpha: CGFloat.random(in: 1...100))
+                
+                self.ALabel.textColor = UIColor(red: CGFloat.random(in: 1...100), green: CGFloat.random(in: 1...100), blue: CGFloat.random(in: 1...100), alpha: CGFloat.random(in: 1...100))
+                
+                self.MLabel.textColor = UIColor(red: CGFloat.random(in: 1...100), green: CGFloat.random(in: 1...100), blue: CGFloat.random(in: 1...100), alpha: CGFloat.random(in: 1...100))
+                self.BLabel.textColor = UIColor(red: CGFloat.random(in: 1...100), green: CGFloat.random(in: 1...100), blue: CGFloat.random(in: 1...100), alpha: CGFloat.random(in: 1...100))
+                self.DLabel.textColor = UIColor(red: CGFloat.random(in: 1...100), green: CGFloat.random(in: 1...100), blue: CGFloat.random(in: 1...100), alpha: CGFloat.random(in: 1...100))
+                self.AendLabel.textColor = UIColor(red: CGFloat.random(in: 1...100), green: CGFloat.random(in: 1...100), blue: CGFloat.random(in: 1...100), alpha: CGFloat.random(in: 1...100))
+                
+                
+                self.LLabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi/4)
+                self.ALabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi/4)
+                self.MLabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi/4)
+                self.DLabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi/4)
+                self.AendLabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi/4)
                 
             }
-            
-            
-            
         }else {
+            self.imageView.alpha = 1
+            
             
         }
         
         
     }
     
+    
+    
 }
-
