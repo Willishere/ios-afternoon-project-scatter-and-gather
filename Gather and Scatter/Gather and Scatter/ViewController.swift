@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         var isScattered: Bool = true
         isScattered != isScattered
         if isScattered{
-            UIView.animate(withDuration: 1.5) {
+            UIView.animate(withDuration: 2.7) {
                 self.imageView.alpha = 0
                 self.LLabel.center = CGPoint(x: Int.random(in: 1...100), y: Int.random(in: 1...100))
                 self.ALabel.center = CGPoint(x: Int.random(in: 1...100), y: Int.random(in: 1...100))
@@ -35,6 +35,11 @@ class ViewController: UIViewController {
                 self.BLabel.center = CGPoint(x: Int.random(in: 1...100), y: Int.random(in: 1...100))
                 self.DLabel.center = CGPoint(x: Int.random(in: 1...100), y: Int.random(in: 1...100))
                 self.ALabel.center = CGPoint(x: Int.random(in: 1...100), y: Int.random(in: 1...100))
+                self.LLabel.backgroundColor = UIColor(red: CGFloat.random(in: 1...100, green: CGFloat.random(in: 1...100), blue: CGFloat.random(in: 1...100), alpha: CGFloat.random(in: 1...100)
+                    
+                self.LLabel.textColor = UIColor(red: CGFloat.random(in: 1...100), green: CGFloat.random(in: 1...100), blue: CGFloat.random(in: 1...100), alpha: CGFloat.random(in: 1...100)
+                
+                
                 
             }
             
