@@ -81,6 +81,15 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="ALabel" destination="Egm-Hh-uD5" id="yRV-1e-oW8"/>
+                        <outlet property="AendLabel" destination="iZ4-3Y-wcv" id="YL1-DO-2ge"/>
+                        <outlet property="BLabel" destination="0eL-vW-uZq" id="aHs-OS-LUP"/>
+                        <outlet property="DLabel" destination="Kzw-iY-Y8n" id="lXt-GC-CHL"/>
+                        <outlet property="LLabel" destination="alF-b2-3bs" id="eUQ-4k-ySS"/>
+                        <outlet property="MLabel" destination="3AQ-cg-oYH" id="yMm-wX-esV"/>
+                        <outlet property="imageView" destination="5J3-bk-0ok" id="Epm-nc-3qN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
